@@ -2,8 +2,9 @@
 
 <h3> Overview: </h3>
 
-○ Docker Images
-○ Managing Images 
+- Docker Images
+
+- Managing Images 
 ○ Listing and Removing Images 
 ○ Searching for Images 
 ○ Downloading Images 
