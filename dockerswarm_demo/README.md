@@ -84,3 +84,46 @@ docker service logs 55yg5eqrl7i6
 **To remove the docker swarm stack:**
 
 docker stack rm sample-stack_newapp
+
+<h3> Rolling updates </h3>
+
+**To create the rolling update:**
+
+docker stack deploy -c rollingupdates.yaml web	
+
+**To view the details of the rolling updates:**
+docker stack ps web	
+
+**To watch what is happening behind the updates:**
+
+For Linux:
+watch docker stack ps web
+
+For Windows in powershell:
+while (1) {docker stack ps web; sleep 5} 
+
+**To update the service:**
+
+docker service update --image nginx:1.13-alpine web_web	
+
+<h3>Dealing with secret file</h3>
+
+**To write some message in the secret file:**
+
+echo  "some message " > ./my-secrets/secret-value.txt 	
+
+**To create a secret file:**
+
+docker secret create my-secret ./my-secrets/secret-value.txt	
+
+**To list of the secret file:**
+
+docker secret ls	
+
+**To inspect the secret file:**
+
+docker secret inspect my-secret	
+
+**To converge the service:**
+
+docker service create --name web --secret my-secret --publish 9000:9000 fundamentalsofdocker/whoami	
