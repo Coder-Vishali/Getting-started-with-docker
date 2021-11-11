@@ -1,7 +1,7 @@
 FROM python:3.6
 
-ENV HTTP_PROXY "http://approxy.rockwellcollins.com:9090"
-ENV HTTPS_PROXY "http://approxy.rockwellcollins.com:9090"
+ENV HTTP_PROXY "http://company.com:port"
+ENV HTTPS_PROXY "http://company.com:port"
 
 EXPOSE 5000
 
