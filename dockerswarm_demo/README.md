@@ -24,7 +24,8 @@ docker node ls
 
 docker node inspect m1utad9hd9e9ojes4yqkv3a1o	
 
-<line>
+
+
 
 Make sure of Play with docker: https://labs.play-with-docker.com/
 
