@@ -77,8 +77,8 @@ docker image tag new-python-app:latest vishali007/new-python-app:1.0
 docker image push docker_user_name/new-python-app:1.0	
 
 **To pull from registry:**
-d
-ocker pull docker_user_name/new-python-app:1.0	
+
+docker pull docker_user_name/new-python-app:1.0	
 
 **To echo some message:**
 
