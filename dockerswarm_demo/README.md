@@ -3,6 +3,7 @@
 docker swarm init	
 
 **To leave the swarm:**
+
 docker swarm leave --force	
 
 **To join the swarm:**
@@ -22,6 +23,8 @@ docker node ls
 **To inspect the node:**
 
 docker node inspect m1utad9hd9e9ojes4yqkv3a1o	
+
+<br>
 
 Make sure of Play with docker: https://labs.play-with-docker.com/
 
