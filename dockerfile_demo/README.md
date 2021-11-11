@@ -7,8 +7,11 @@ docker image build -t new-python-app .
 If you face i/o error, to resolve it set the builtkit = false in docker setting
 
 ""experimental"": false,
+  
   ""features"": {
+    
     ""buildkit"": false
+  
   },""
   
 **To view all the docker images:**
@@ -70,10 +73,12 @@ docker login
 docker image tag new-python-app:latest vishali007/new-python-app:1.0
 
 **To push the image into the registry:**
+
 docker image push docker_user_name/new-python-app:1.0	
 
 **To pull from registry:**
-docker pull docker_user_name/new-python-app:1.0	
+d
+ocker pull docker_user_name/new-python-app:1.0	
 
 **To echo some message:**
 
