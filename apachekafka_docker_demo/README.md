@@ -9,6 +9,7 @@ docker-compose up
 docker-compose ps	
 
 **To create topic mytopic (Open another terminal and run the below command):**
+
 docker-compose exec kafka kafka-topics --create --topic mytopic --bootstrap-server broker:9092	
 
 **Listing the listerer:**
