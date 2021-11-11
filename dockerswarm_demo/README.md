@@ -27,7 +27,7 @@ docker node inspect m1utad9hd9e9ojes4yqkv3a1o
 
 
 
-Make sure of Play with docker: https://labs.play-with-docker.com/
+<h3> With the help of Play with docker you can create nodes in swarm: https://labs.play-with-docker.com/ </h3>
 
 **To make a swarm as a leader:** 
 
