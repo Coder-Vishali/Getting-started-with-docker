@@ -1,3 +1,5 @@
+<h3> Docker Swarm Setup </h3>
+
 **To initialize a swarm. It consists of single node:**
 
 docker swarm init	
@@ -25,8 +27,6 @@ docker node ls
 docker node inspect m1utad9hd9e9ojes4yqkv3a1o	
 
 
-
-
 <h3> With the help of "Play with docker" you can create nodes in swarm: https://labs.play-with-docker.com/ </h3>
 
 **To make a swarm as a leader:** 
@@ -44,3 +44,43 @@ docker node ls
 docker node promote node2 node3
 
 docker node ls
+
+<h3> Docker Swarm Stack </h3>
+
+**To create a docker swarm stack:**
+
+docker stack deploy -c servicedemo1.yml sample-stack
+
+**To list of the networks:**
+
+docker network ls
+
+**To show the name of the stack, services and orchestrator:**
+
+docker stack ls	
+
+**To show the replicas, id , mode:**
+
+docker service ls	
+
+**To inspect a particular stack:**
+
+docker service ps sample-stack_newapp	
+
+**To remove the container:**
+
+docker container rm 3b1eff864dc4  -f
+
+Delete the containers and check. It will recreate the container again. Since we have used replicas. You can see 6/6 containers
+
+docker service ls
+
+**To get the service logs:**
+
+docker service logs sample-stack_newapp	
+
+docker service logs 55yg5eqrl7i6	
+
+**To remove the docker swarm stack:**
+
+docker stack rm sample-stack_newapp
