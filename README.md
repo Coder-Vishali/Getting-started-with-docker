@@ -1,5 +1,10 @@
 # Getting-started-with-docker
 
+Docker is a platform that allows users to implement containerization. A container is an environment where, unless otherwise specified, everything inside it like code or software are isolated from the hosting operating system. 
+
+Containerization is the process of creating and sharing software or code through images to build these containers. An image is the sort of “blueprint” that docker uses to build the actual container and fill its contents. A repository is a collection of images.
+
+
 <h3> Docker images</h3>
 
 - Managing Images 
